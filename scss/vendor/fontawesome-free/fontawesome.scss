@@ -1,0 +1,22 @@
+// Override the font path
+$fa-css-prefix:                    fa;
+$fa-font-path:                     "../../../vendor/fontawesome-pro/webfonts" !default;
+
+// Font Awesome 6 Free
+@import "../../../vendor/fontawesome-pro/scss/fontawesome";
+@import "../../../vendor/fontawesome-pro/scss/regular";
+@import "../../../vendor/fontawesome-pro/scss/solid";
+
+// Brands must be imported last
+@import "../../../vendor/fontawesome-pro/scss/brands";
+
+// B/C with Font Awesome 5
+@import "../../../vendor/fontawesome-pro/scss/shims";
+
+// B/C for Icomoon
+@import "../../../../../../system/scss/icomoon";
+
+// RTL override
+html[dir=rtl] .float-right {
+  float: left;
+}
